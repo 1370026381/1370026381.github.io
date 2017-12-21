@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Resume</title>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/jQuery.js"></script>
+  <script src="js/helper.js"></script>
+
+  <!--
+  Uncomment the <script> tag below when you're ready to add an interactive
+  Google Map to your resume!
+  -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <nav id="main-navigation">
+    <div class="site-logo"><img src="http://placehold.it/100x50"></div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html">主页</a></li>
+      <li class="nav-item"><a href="#workExperience">工作经验</a></li>
+      <li class="nav-item"><a href="#projects">项目</a></li>
+      <li class="nav-item"><a href="#education">教育</a></li>
+     <!-- <li class="nav-item"><a href="#map">地图上找到我地址</a></li>-->
+    </ul>
+  </nav>
+  <div id="main">
+
+    <header class="header">
+      <i class="fa fa-bars nav-icon icon-open"></i>
+      <i class="fa fa-times nav-icon icon-close"></i>
+      <div class="site-head">
+        <div id="bio-name"></div>
+      </div>
+
+    </header>
+
+    <div class="page-content container">
+      <section class="about-section container">
+
+        <div class="bio-about row">
+
+          <div id="skills" class="col-md-4 col-sm-6"></div>
+          <ul id="topContacts" class="col-md-4 col-sm-6 list-inline"></ul>
+        </div>
+
+      </section>
+      <hr class="hr">
+
+      <section class="work-section">
+
+      <div class="work-experience">
+        <div class="">
+          <h2>工作经验</h2>
+        </div>
+        <div id="workExperience"><!--work units being put here  --></div>
+      </div>
+
+      </section>
+
+      <section class="projects-section">
+
+        <div class="project-header">
+          <i id="project-left" class="fa fa-arrow-circle-left"></i>
+          <h2 class="projects-heading">项目</h2>
+          <!-- <div class="projects-slider col-xs-6"> -->
+
+          <i id="project-right" class="fa fa-arrow-circle-right"></i>
+          <!-- </div> -->
+        </div>
+
+        <div id="projects" class="row">
+
+        </div>
+        <div class="p-counter">
+            <!-- displays button for each project -->
+            <span class="p-piece"></span>
+            <span class="p-piece p-piece-active"></span>
+            <span class="p-piece"></span>
+            <span class="p-piece"></span>
+        </div>
+      </section>
+
+      <section class="education-section row">
+        <div id="education" class="col-md-12 col-sm-12">
+          <h2>教育</h2>
+        </div>
+
+      </section>
+
+      <section class="map-section">
+
+        <div id="mapDiv">
+          <h2>Where I've Lived and Worked</h2>
+        </div>
+
+      </section>
+    </div>
+
+    <footer class="footer">
+
+      <div id="lets-connect" class="container">
+        <!-- <h2 class="orange center-text">Let's Connect</h2> -->
+        <ul id="footerContacts"></ul>
+
+      </div>
+    </footer>
+
+  </div>  <!--#main ends -->
+
+  <script src="js/resumeBuilder.js"></script>
+
+  <script type="text/javascript">
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.display = 'none';
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.display = 'none';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.display = 'none';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.display = 'none';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.display = 'none';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('lets-connect').style.display = 'none';
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
