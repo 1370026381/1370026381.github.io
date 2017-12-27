@@ -37,11 +37,11 @@ var work = {
       "url" : "javascript:void(0)"
     },
     {
-      "employer" : "顺丰速运",
-      "title" : "快递员",
-      "location" : "广州天河",
+      "employer" : "西安赛威麒",
+      "title" : "汽车改装",
+      "location" : "西安",
       "dates" : "2010-2014",
-      "description" : "超快节奏的工作，每天都是在和时间赛跑，时刻记住时效和服务质量，经常会有各个主管打来电话，运气好还会有经理办公室约谈。",
+      "description" : "汽车外观改装，细节仔细",
       "url" : "javascript:void(0)"
     }
   ]
